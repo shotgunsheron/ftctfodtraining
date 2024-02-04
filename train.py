@@ -127,7 +127,7 @@ spec = object_detector.EfficientDetSpec(
   hparams={'max_instances_per_image': 25})
 
 # Train the model
-model = object_detector.create(train_data, model_spec=spec, batch_size=8, train_whole_model=True, epochs=3, validation_data=validation_data)
+model = object_detector.create(train_data, model_spec=spec, batch_size=8, train_whole_model=True, epochs=1, validation_data=validation_data)
 
 # Evaluate the model
 eval_result = model.evaluate(test_data)
